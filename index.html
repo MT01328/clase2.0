@@ -1,0 +1,131 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="utf-8">
+<title>Aplic. Web de jQuery Mobile</title>
+<link href="../practica1/jquery.mobile-1.0.min.css" rel="stylesheet" type="text/css"/>
+<script src="../practica1/jquery-1.6.4.min.js" type="text/javascript"></script>
+<script src="../practica1/jquery.mobile-1.0.min.js" type="text/javascript"></script>
+
+.ui-btn.my-tooltip-btn,
+.ui-btn.my-tooltip-btn:hover,
+.ui-btn.my-tooltip-btn:active {
+    background: none;
+    border: 0;
+}
+
+</head> 
+<body> 
+
+<div data-role="page" id="page" data-theme="b"> 
+	<div data-role="header">
+		<h1>Maestria en adminitracion de tecnologias</h1>
+	</div>
+	<div data-role="content">	
+		<ul data-role="listview">
+			<li><a href="#page2">Raul</a></li>
+            <li><a href="#page3">Gatica </a></li>
+			<li><a href="#page4">Espinoza</a></li>
+            <li><a href="#page5">MT01328</a></li>
+           
+		</ul>		
+	</div>
+	
+</div>
+
+<div data-role="page" id="page2">
+	<div data-role="header">
+		<h1>Página dos</h1>
+	</div>
+	<div data-role="content">	
+    <img src="../practica1/pikachu.jpg" alt="pikachu" style="width:600px;height:400px;">
+    
+    <p>saber mas sobre. <a href="#popupInfo" data-rel="popup" data-transition="pop" class="my-tooltip-btn ui-btn ui-alt-icon ui-nodisc-icon ui-btn-inline ui-icon-info ui-btn-icon-notext" title="Es un pokemon">Pikachu</a></p>
+<div data-role="popup" id="popupInfo" class="ui-content" data-theme="a" style="max-width:350px;">
+ 
+    <a href="#popupBasic" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-transition="pop">Popup basico</a>
+<div data-role="popup" id="popupBasic">
+<p>solamente nos muestra una ventana emergente</p>
+</div>
+  
+       	
+	</div>
+	</div>
+    </div>
+    
+</div>
+
+<div data-role="page" id="page3" data-theme="a">
+	<div data-role="header" data-theme="c">
+		<h1>Compañeros de clase</h1>
+	</div>
+	<div data-role="content">	
+    
+    
+		<table style="width:100%">
+  <tr>
+    <th>Nombre</th>
+    <th>Apellido</th> 
+    <th>Edad</th>
+  </tr>
+  <tr>
+    <td>Abigail</td>
+    <td>Rodriguez</td> 
+    <td>25</td>
+  </tr>
+  <tr>
+    <td>Jessica</td>
+    <td>Flores</td> 
+    <td>23</td>
+  </tr>
+  <tr>
+    <td>Ivonne</td>
+    <td>Corrales</td> 
+    <td>30</td>
+  </tr>
+  <tr>
+    <td>Alejandro</td>
+    <td>Salas</td> 
+    <td>22</td>
+  </tr>
+</table>	
+	</div>
+	
+</div>
+
+<div data-role="page" id="page4">
+	<div data-role="header">
+		<h1>mapa de imagenes</h1>
+	</div>
+	 <img src="google.jpg" alt="google" usemap="#workmap">
+
+<map name="workmap">
+  <area shape="rect" coords="12,119,232,242" alt="Computer" href="https://www.youtube.com/">
+  <area shape="rect" coords="417,171,732,286" alt="Phone" href="https://www.google.com.mx/">
+
+</map>
+ 
+</map>
+	
+</div>
+
+<div data-role="page" id="page5">
+	<div data-role="header">
+		<h1>formulario</h1>
+	</div>
+    <h2>formulario</h2>
+<p>el <strong>formulario solo acepta letras="texto"</strong> </p>
+
+<form action="/action_page.php">
+primer nombre:<br>
+<input type="text" name="firstname">
+<br>
+apellido:<br>
+<input type="text" name="lastname">
+<br><br>
+<input type="submit">
+</form>
+
+
+</body>
+</html>
